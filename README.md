@@ -16,6 +16,7 @@ permission from them to use their works.
 
 For more information, please visit https://github.com/WhatPumpkin/Sburb/wiki
 
-NOTES:
-run ./production.sh to create a new build of the game.
-For this version, you need to have Terser (npm i terser), a modern javascript minimizer.
+NOTE - to create a new build of the game as Jterniabound.zip:
+1) open Git Bash and navigate to this folder.
+2) have JS minimizer Terser installed (> npm i terser)
+3) > ./production.sh
