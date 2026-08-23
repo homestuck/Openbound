@@ -743,7 +743,7 @@ function loadSerialState() {
   }
   
   if(loadQueue.length==0 && loadingDepth==0){
-		Sburb.startUpdateProcess();
+		Sburb.readyToPlay();
 	}
 }
 
@@ -954,7 +954,7 @@ function parseState(input){
 			}
 		}
 		if(initAction) {
-			Sburb.performAction(initAction);
+			Sburb.initAction = initAction;
 		}
     }
 }

@@ -62,14 +62,17 @@
   <asset name='openSound2' type='audio'>audio/sfx/Open2.oga;audio/sfx/Open2.mp3</asset>
   <asset name='stairSound' type='audio'>audio/sfx/Staircase.oga;audio/sfx/Staircase.mp3</asset>
 </assets>
-<!--
 <action name='startGame' command='playMovie'>
 	<args>startMovie,fusciaRuler, 32.0830</args>
 </action>
--->
+<action name='startMusic' command='playSong'>
+	<args>fusciaRuler, 32.0830</args>
+</action>
+<!--
 <action name='startGame' command='playSong'>
 	<args>fusciaRuler, 32.0830</args>
 </action>
+-->
 
 <hud>
   	<spritebutton name='volumeButton' x='9' y='9' width='54' height='36' sheet='volumeControl'>

@@ -138,13 +138,20 @@ events.movie = function(info) {
 		this.movie = window.document.getElementById("movie"+params[1]);
 	}
 	this.checkCompletion = function(){
-		if(this.movie && (!this.movie.TotalFrames || 
-				  (this.movie.TotalFrames()>0 && this.movie.TotalFrames()-1-this.movie.CurrentFrame()<=threshold))){
+        if (params[1] in Sburb.assets && Sburb.assets[params[1]].finished) {
 			Sburb.commands.removeMovie(params[1]);
 			return true;
 		}
 		return false;
-	}
+        /*
+        if (this.movie && (!this.movie.TotalFrames ||
+                (this.movie.TotalFrames() > 0 && this.movie.TotalFrames() - 1 - this.movie.CurrentFrame() <= threshold))) {
+            Sburb.commands.removeMovie(params[1]);
+            return true;
+        }
+        return false;
+        */
+    }
 };
 
 //check if the game state meets a certain condition
