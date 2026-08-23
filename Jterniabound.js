@@ -1024,6 +1024,23 @@ var Sburb = (function (Sburb) {
     );
   };
 
+  Sburb.cleanup = function () {
+    if (Sburb.updateLoop) {
+      clearInterval(Sburb.updateLoop);
+      clearInterval(Sburb.drawLoop);
+      Sburb.updateLoop = Sburb.drawLoop = null;
+    }
+    if (Sburb.bgm) {
+      Sburb.bgm.stop();
+    }
+    if (Sburb.assetManager) {
+      Sburb.assetManager.stop();
+    }
+    if (Sburb.audioContext) {
+      Sburb.audioContext.close();
+    }
+  };
+
   Sburb.startUpdateProcess = startUpdateProcess;
   Sburb.haltUpdateProcess = haltUpdateProcess;
   Sburb.draw = draw;
