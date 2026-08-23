@@ -9,9 +9,13 @@ Redistributions in binary form must reproduce the above copyright notice, this l
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-All artistic and musical assets used in this project are the property of their 
-respective creators. They are used in the development of this project with their 
-permission. If you fork or otherwise copy this project, you must obtain 
-permission from them to use their works. 
+All artistic and musical assets used in this project are the property of their
+respective creators. They are used in the development of this project with their
+permission. If you fork or otherwise copy this project, you must obtain
+permission from them to use their works.
 
 For more information, please visit https://github.com/WhatPumpkin/Sburb/wiki
+
+NOTES:
+run ./production.sh to create a new build of the game.
+For this version, you need to have Terser (npm i terser), a modern javascript minimizer.
