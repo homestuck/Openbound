@@ -13,3 +13,7 @@ All artistic and musical assets used in this project are the property of their
 respective creators. They are used in the development of this project with their 
 permission. If you fork or otherwise copy this project, you must obtain 
 permission from them to use their works. 
+
+NOTES:
+run ./production.sh to create a new build of the game.
+For this version, you need to have Terser (npm i terser), a modern javascript minimizer.
