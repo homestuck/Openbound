@@ -743,6 +743,10 @@ function loadSerialState() {
   }
   
   if(loadQueue.length==0 && loadingDepth==0){
+    if (Sburb.audioUnlocked) {
+        Sburb.startUpdateProcess();
+        return;
+      }
 		Sburb.readyToPlay();
 	}
 }
