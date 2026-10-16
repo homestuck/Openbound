@@ -97,7 +97,7 @@ var Sburb = (function (Sburb) {
   Sburb.AssetManager.prototype.draw = function () {
     Sburb.stage.fillStyle = "rgb(0,0,0)";
     Sburb.stage.fillRect(-3, -3, Sburb.Stage.width + 6, Sburb.Stage.height + 6);
-    if (this.loaded["preloaderBG"]) {
+    if (this.loaded["preloaderBG"] && !Sburb.audioUnlocked) {
       var preloaderBG = Sburb.assets["preloaderBG"];
       Sburb.stage.drawImage(
         preloaderBG,
@@ -132,6 +132,9 @@ var Sburb = (function (Sburb) {
     }
     if (percent >= 100) {
       Sburb.assetManager.loadingDescription = "Tap to play! ";
+    }
+    if (Sburb.audioUnlocked) {
+      Sburb.assetManager.loadingDescription = "";
     }
     Sburb.stage.fillText(
       Sburb.assetManager.loadingDescription + percent + "%",
