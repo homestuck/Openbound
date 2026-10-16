@@ -15,5 +15,5 @@ permission. If you fork or otherwise copy this project, you must obtain
 permission from them to use their works. 
 
 NOTES:
-run ./production.sh to create a new build of the game.
+run ./production.sh in Git Bash to create a new build of the game.
 For this version, you need to have Terser (npm i terser), a modern javascript minimizer.
