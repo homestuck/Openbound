@@ -1,4 +1,4 @@
-cat Iuppiter.js modernizr.js Jterniabound.js Sprite.js Fighter.js Character.js SpriteButton.js Animation.js Room.js FontEngine.js Action.js events.js Trigger.js commands.js serialization.js Dialoger.js Chooser.js Audio.js Assets.js Debugger.js Path.js > Sburb.js
+cat Iuppiter.js modernizr.js Jterniabound.js Sprite.js Fighter.js Character.js SpriteButton.js Animation.js Room.js FontEngine.js Action.js events.js Trigger.js commands.js serialization.js Dialoger.js Chooser.js Audio.js Assets.js Debugger.js Path.js ActionQueue.js > Sburb.js
 terser Sburb.js -o Sburb.min.js --compress --mangle
 cp index.html index_dev.html
 rm index.html
