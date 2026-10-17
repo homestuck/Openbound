@@ -50,7 +50,7 @@ Sburb.Debugger = function() {
     this.console = new Sburb.Console();
     this.XMLHttpRequest = window.XMLHttpRequest; // Save real XMLHttpRequest
     window.XMLHttpRequest = function() { return new Sburb.XMLHttpRequest(); }; // Replace real XMLHttpRequest
-    window.addEventListener("error",function(e) { that.errors.push({"type":e.type,"text":e.message,"url":e.filename,"line":e.lineno,"time":e.timeStamp}); that.open = true; },false);
+    window.addEventListener("error",function(e) { that.errors.push({"type":e.type,"text":e.message,"url":e.filename,"line":e.lineno,"time":e.timeStamp}); if (e.message == "Script error." && e.lineno == 0 && e.filename == "") { return }; that.open = true; },false);
 }
 
 Sburb.Debugger.prototype.handleInputs = function(pressed) {
