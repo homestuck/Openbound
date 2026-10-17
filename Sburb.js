@@ -1652,7 +1652,7 @@ var Sburb = (function (Sburb) {
           // A hacky way to end the clip or else it'll start looping. A better way is probably to get the timer, make sure that its paused when the focus isn't on the current tab and calculate the elapsed time from that and tie an event listener to that but that's way more work.
           setTimeout(
             Sburb.assetManager.movieAssetRef.finish,
-            ((metadata.numFrames - 18) / metadata.frameRate) * 1000,
+            ((metadata.numFrames) / metadata.frameRate) * 1000,
             rufflePlayer,
           );
         });
